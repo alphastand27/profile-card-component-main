@@ -4,30 +4,38 @@
   <meta charset="UTF-8">
   <!-- displays site properly based on user's device -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Profile card</title>
 </head>
 <body>
-  <img id="top" src="images/bg-pattern-top.svg" alt="top semi sphere for the background">
-  <img id="bottom" src="images/bg-pattern-bottom.svg" alt="bottom semi sphere for the background">
+  <img class="background-img" id="top" src="images/bg-pattern-top.svg" alt="top semi sphere for the background">
+  <img class="background-img" id="bottom" src="images/bg-pattern-bottom.svg" alt="bottom semi sphere for the background">
   <main id="profile-card">
-    <img src="images/bg-pattern-card.svg" alt="">
-    <img src="images/image-victor.jpg" alt="profile picture">
-    <h1>Victor Crest <span id="age">26</span></h1>
+    <img id="profile-background" src="images/bg-pattern-card.svg" alt="background image">
+    <img id="profile-img" src="images/image-victor.jpg" alt="profile picture">
+    <h1 id="name">Victor Crest</h1><p id="age">26</p>
     <p id="location">London</p>
-    <hr>
-    <header class="figures">80K</header>
-    <p class="category">Followers</p>
-    <header class="figures">803K</header>
-    <p class="category">Likes</p>
-    <header class="figures"></header>1.4K
-    <p class="category">Photos</p>
+    <div></div>
+    <section id="figures">
+      <section id="stats">
+        <header class="stat">80K</header>
+        <header class="stat">803K</header>
+        <header class="stat">1.4K</header>
+      </section>
+      <section id="categories">
+        <p class="category">Followers</p>
+        <p class="category">Likes</p>
+        <p class="category">Photos</p>
+      </section>
+    </section>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/alphastand27" target="_blank">Your Name Here</a>.
   </footer>
 </body>
 </html>
